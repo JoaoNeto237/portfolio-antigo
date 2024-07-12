@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 574px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(../imagens/img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top center;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        color: white;
+
+    }
+    .container_cabecalho{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 200px;
+
+    }
+    header{
+        position:fixed;
+        margin: 0;
+        padding: 10px;
+        width: 100vw;
+        height: 50px;
+        background-color: black;
+        z-index: 1000; 
+        
+    }
+    header > h2{
+        color: white;
+        text-transform:capitalize;
+        font-size: 1.8em;
+        padding: 20px;
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    .blue{
+        color: blue;
+    }
+    .icone_nav{
+        font-size:30px ;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+  
+    .nav_list{
+        list-style: none;
+        display: none;
+        background-color: black;
+        border: 0.1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .nav li{
+        margin-left: 20px;
+        line-height: 2;
+        font-size: 1.2em;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+    }
+    .nav li a:hover{
+        color: blue;
+    }
+    .h1 h1{
+        text-align: center;
+        text-transform: capitalize;
+        color: white;
+
+    }
+    
+    .container-sobre{
+        width: 100%;
+    }
+    .foto-perfil img{
+        display: block;
+        width: 50vw;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .sobre{
+        max-width: 350px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        border-radius: 30px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .sobre p{
+        text-align: justify;
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    .botao{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        padding: 10px 30px;
+        margin: 20px;
+        border-radius: 15px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 1.4em;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+    
+    .botao:hover{
+        transform: scale(1.1);
+    }
+    .botao a{
+        text-decoration: none;
+        color: white;
+    }
+    .container-skills h1{
+        font-size: 1.7em;
+        text-transform: capitalize;
+        text-align: center
+        
+        
+    }
+    
+    .container-img{
+        border-radius: 20px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        max-width: 350px;
+        
+    }
+    .imagens-skills img{
+        margin-left: 12px;
+        width:130px ;
+        padding-bottom: 10px;
+        padding: 5px;
+        height: 100px;
+
+    }
+   .imagens-skills .img2{
+        width: 95px;
+        height: 90px;
+        margin-left: 30px;
+    }
+    /*visibility: hidden esconde todos os elementos que foi atribuido e no javascript eles sao revelados*/
+    .habilidades, .container-img, .imagens-skills img{
+        visibility: hidden;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.7em;
+    }
+    .soft{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        column-count: 2;
+        max-width: 350px;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.671);
+        margin-bottom: 100px;
+    }
+    .soft ul{
+        list-style-type:none;
+    }
+    .soft li{
+        padding: 0px 20px;
+    }
+    .soft li::before{
+        content: '\21D2';
+        color: blue;
+    }
+    .soft ul li{
+        color: white;
+        font-size: 1.3em;
+    }
+
+    footer {
+        color: #fff;
+        box-shadow: 2px solid black;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        bottom: 0;
+    }
+}

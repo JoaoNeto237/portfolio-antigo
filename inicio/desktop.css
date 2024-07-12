@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@media screen and (min-width: 575px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(../imagens/img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top;
+        overflow: hidden;
+        color: white;
+
+    }
+    .container_cabecalho{
+        display: flex;
+
+    }
+    header{
+        padding: 20px 100px;
+        
+    }
+    header > h2{
+        color: white;
+        text-transform:capitalize;
+        font-size: 1.8em;
+        
+    }
+    .nav{
+        padding: 15px;
+        position: absolute;
+    }
+    .icone_nav{
+        font-size:30px ;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .nav_list{
+        list-style: none;
+        display: none;
+        
+    }
+    .nav li{
+        margin-left: 20px;
+        line-height: 2;
+        font-size: 1.2em;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        
+    }
+    .blue{
+        color: blue;
+    }
+    .container_principal{
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+
+    }
+    .filho_principal{
+        font-size: 1.2em;
+        
+    }
+    .filho_principal > h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 5em;
+        color:white;
+    }
+    .filho_principal > h2{
+        text-transform: capitalize;
+        font-size: 2.6em;
+        text-align: center;
+        color: white;
+    }
+    .container_imagem{
+        display: flex;
+        justify-content: center;
+    }
+    figure img{
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        border-radius: 25px;
+        
+        transition: transform 0.3s ease-in-out;
+    }
+    figure img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+}
