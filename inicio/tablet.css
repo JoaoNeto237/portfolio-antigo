@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 575px) and (max-width:1023px) {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(../imagens/img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:left;
+        overflow: hidden;
+        color: white;
+
+    }
+    .container_cabecalho{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 200px;
+
+    }
+    header{
+        position:fixed;
+        margin: 0;
+        padding: 10px;
+        width: 100vw;
+        height: 50px;
+        background-color: black;
+        z-index: 1000; 
+        
+    }
+    header > h2{
+        text-align: center;
+        color: white;
+        text-transform:capitalize;
+        font-size: 1.8em;
+        padding: 20px;
+    }
+    .nav{
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    .blue{
+        color: blue;
+    }
+    .icone_nav{
+        font-size:30px ;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .nav_list{
+        list-style: none;
+        display: none;
+        background-color: black;
+        border: 0.1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .nav li{
+        margin-left: 20px;
+        line-height: 2;
+        font-size: 1.2em;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+    }
+    .nav li a:hover{
+        color: blue;
+    }
+    .blue{
+        color: blue;
+    }
+    .container_principal{
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+
+    }
+    .filho_principal{
+        font-size: 1.6em;
+        
+    }
+    .filho_principal > h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3em;
+    }
+    .filho_principal > h2{
+        text-transform: capitalize;
+        font-size: 1.5em;
+        text-align: center;
+        color: rgb(50, 50, 194);
+    }
+    .container_imagem{
+        display: flex;
+        justify-content: center;
+    }
+    figure img{
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        border-radius: 25px;
+        
+        transition: transform 0.2s ease-in-out;
+    }
+    figure img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+
+
+}

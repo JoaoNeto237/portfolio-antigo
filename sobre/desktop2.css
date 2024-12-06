@@ -24,15 +24,17 @@
 
     }
     header{
-        position: fixed;
-        z-index: 1000; 
+        position:fixed;
         margin: 0;
         padding: 10px;
         width: 100vw;
         height: 50px;
         background-color: black;
+        z-index: 1000; 
+        
     }
     header > h2{
+        text-align: center;
         color: white;
         text-transform:capitalize;
         font-size: 1.8em;
@@ -51,7 +53,7 @@
         cursor: pointer;
         transition: transform 0.2s ease-in-out;
     }
-  
+
     .nav_list{
         list-style: none;
         display: none;
